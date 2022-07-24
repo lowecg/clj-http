@@ -162,7 +162,7 @@
       m)
     (dissoc m k)))
 
-(defn url-encode-illegal-characters
+(defn ^:dynamic url-encode-illegal-characters
   "Takes a raw url path or query and url-encodes any illegal characters.
   Minimizes ambiguity by encoding space to %20."
   [path-or-query]

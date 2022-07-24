@@ -26,7 +26,7 @@
   [^String encoded & [^String encoding]]
   (URLDecoder/decode encoded (or encoding "UTF-8")))
 
-(defn url-encode
+(defn ^:dynamic url-encode
   "Returns an UTF-8 URL encoded version of the given string."
   [^String unencoded & [^String encoding]]
   (URLEncoder/encode unencoded (or encoding "UTF-8")))
